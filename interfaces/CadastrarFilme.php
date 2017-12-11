@@ -24,48 +24,17 @@
           Cliente
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Cadastrar</a>
+          <a class="dropdown-item" href="JanelaCadastroCliente.php">Cadastrar</a>
         </div>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Filme
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="CadastrarFilme.php">Cadastrar</a>
+          <a class="dropdown-item" href="#">Cadastrar</a>
           <a class="dropdown-item" href="#">Reservar</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-  <pre>
-    <div class="container">
-    <form class="JanelaCadastroCliente" method="POST" action= "inserir.php">
-      <p id="cliente">CLIENTES CADASTRADOS<select id="sele" name="visão">
-        <option value="-"></option>
-      </select>
-      </p>
-    <p id="CPF">CPF:</p> 
-    <input id="cpf" type="text" name="CPF" placeholder="CPF do cliente" class="form-control" required>
-
-    <p id="nome">NOME:</p>
-    <input id="cpf" type="text" name="nome" placeholder="Nome do cliente" class="form-control" required>
-
-    <p id="nome">ENDEREÇO:</p>
-    <input id="cpf" type="text" name="endereco" placeholder="Endereço do cliente" class="form-control" required>
-
-    <p id="nome">TELEFONE:</p>
-    <input id="cpf" type="text" name="telefone" placeholder="Telefone do cliente" class="form-control" required><br><br>
-  </div>
-</pre>
-<div id="botoes">
-        <input type="submit" name="inserir" value="inserir" class="btn btn-outline-success" style="cursor: pointer;">
-        <input type="submit" name="consultar" value="consultar" class="btn btn-outline-info" style="cursor: pointer;">
-        <input type="submit" name="alterar" value="alterar" class="btn btn-outline-primary" style="cursor: pointer;">
-        <input type="submit" name="remover" value="remover" class="btn btn-outline-danger" style="cursor: pointer;">
-        <input type="reset" value="limpar" class="btn btn-outline-warning" style="cursor: pointer;">
-      </div>
-      </form>
-
-  </body>
-</html>
