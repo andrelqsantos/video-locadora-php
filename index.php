@@ -48,10 +48,10 @@
       <img style="width: 100%; height: 650px;" class="d-block w-100" src="http://www.guia-se.com.br/painel/upload/fotos-clientes/102026/63261/Center_V%C3%ADdeo_Locadora.png" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img style="width: 20%; height: 650px;" class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Second slide">
+      <img style="width: 20%; height: 650px;" class="d-block w-100" src="http://www.otvfoco.com.br/wp-content/uploads/2017/11/C9OfsfaVwAAmlvX.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img style="width: 50%; height: 650px;" class="d-block w-100" src="http://lh3.googleusercontent.com/jN9tX6dCJ6_XL9E4K1KCO2Tuwe9_rYUbwv723eu6XGI0PWGLcPs0259VscOu249PPKKcU5AOXrq6JnleEaoK6K_JvZ2PY9lw3pMApzOpTQ=s660" alt="Third slide">
+      <img style="width: 50%; height: 650px;" class="d-block w-100" src="http://media.comicbook.com/2017/09/avengers-3-infinity-war-banner-story-spoliers-clues-1022009.jpg" alt="Third slide">
     </div>
   </div>
   <a style="background: #000; width: 5%;" class="carousel-control-prev" href="" role="button" data-slide="prev">
