@@ -30,7 +30,7 @@
           Filme
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Cadastrar</a>
+          <a class="dropdown-item" href="interfaces/CadastrarFilme.php">Cadastrar</a>
           <a class="dropdown-item" href="#">Reservar</a>
         </div>
       </li>
