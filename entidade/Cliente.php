@@ -34,13 +34,12 @@ class Cliente {
       $sql = $pdo->prepare($sql);
       $sql->bindParam(1, $cpf);
       $sql->execute();
-      while ($lista_resultado->$sql->fetch()) {
+      $sql = $sql->fetchAll();
 
-      }
-
-
+      return $cliente1 = new CLiente($sql[0][0], $sql[0][1], $sql[0][2], $sql[0][3]);
     } catch (PDOException $e) {
-
+      echo "Erro".$e->getMessage();
+      return "ERRO";
     }
 
   }
