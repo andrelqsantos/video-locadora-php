@@ -1,4 +1,5 @@
 <?php
+
 require_once("persistencia/BD.php");
 $cpf = "111.111.111-11";
 $sql = "SELECT * FROM clliente WHERE cpf = ?";
@@ -10,7 +11,7 @@ try {
 
     $sql = $sql->fetchAll();
     echo "<pre>";
-    print_r($sql);
+    echo $sql[0][1];
     echo "</pre>";
     echo "Sucess";
 } catch (PDOException $e) {
