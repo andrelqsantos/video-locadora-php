@@ -23,7 +23,7 @@
           Cliente
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="../video-locadora-php/interfaces/JanelaCadastroCliente.php">Cadastrar</a>
+          <a class="dropdown-item" href="interfaces/JanelaCadastroCliente.php">Cadastrar</a>
         </div>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

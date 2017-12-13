@@ -1,3 +1,24 @@
+<?php
+require_once("../config.php");
+
+if(isset($_POST['CPF']) && empty($_POST['CPF']) == false){
+  $cpf = addslashes($_POST['CPF']);
+            
+  $sql = ("SELECT * FROM clliente WHERE cpf = ?");
+  $sql = $pdo->prepare($sql);
+  $sql->bindValue(1, $cpf);
+  $sql->execute();
+
+  if($sql->rowCount() > 0){
+    $sql = $sql->fetchAll();
+    echo "<pre>";
+    print_r($sql);
+    echo "</pre>";
+  }
+}else{
+  echo "<h2>Algum campo nao foi preenchido</h2>";
+}
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,6 +30,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="JanelaCadastroCliente.css">
+    <script type="text/javascript" charset="utf-8" async defer>
+    </script>
 </head>
 <body>
   <!-- As a link -->
@@ -40,7 +63,7 @@
 </nav>
   <pre>
     <div class="container">
-    <form class="JanelaCadastroCliente" method="POST" action= "inserir.php">
+    <form class="JanelaCadastroCliente" method="POST">
       <p id="cliente">CLIENTES CADASTRADOS<select id="sele" name="visão">
         <option value="-"></option>
       </select>
@@ -59,10 +82,10 @@
   </div>
 </pre>
 <div id="botoes">
-        <input type="submit" name="inserir" value="inserir" class="btn btn-outline-success" style="cursor: pointer;">
-        <input type="submit" name="consultar" value="consultar" class="btn btn-outline-info" style="cursor: pointer;">
-        <input type="submit" name="alterar" value="alterar" class="btn btn-outline-primary" style="cursor: pointer;">
-        <input type="submit" name="remover" value="remover" class="btn btn-outline-danger" style="cursor: pointer;">
+        <input type="button" value="inserir" class="btn btn-outline-success" style="cursor: pointer;">
+        <input type="submit" value="consultar" class="btn btn-outline-info" style="cursor: pointer;">
+        <input type="button" value="alterar" class="btn btn-outline-primary" style="cursor: pointer;">
+        <input type="button" value="remover" class="btn btn-outline-danger" style="cursor: pointer;">
         <input type="reset" value="limpar" class="btn btn-outline-warning" style="cursor: pointer;">
       </div>
       </form>
