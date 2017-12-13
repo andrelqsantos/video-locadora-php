@@ -30,8 +30,6 @@ if(isset($_POST['CPF']) && empty($_POST['CPF']) == false){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="JanelaCadastroCliente.css">
-    <script type="text/javascript" charset="utf-8" async defer>
-    </script>
 </head>
 <body>
   <!-- As a link -->
