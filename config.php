@@ -1,6 +1,6 @@
 <?php
 try{
-	$dsn = "mysql:dbname=locadora;host=localhost";
+	$dsn = "mysql:dbname=videolocadora;host=localhost";
 	$dbpass = "";
 	$dbuser = "root";
 	$pdo = new PDO($dsn, $dbuser, $dbpass);

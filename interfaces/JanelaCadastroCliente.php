@@ -1,9 +1,9 @@
 <?php
-require_once("../config.php");
+require_once("../persistencia/BD.php");
 
 if(isset($_POST['CPF']) && empty($_POST['CPF']) == false){
   $cpf = addslashes($_POST['CPF']);
-            
+
   $sql = ("SELECT * FROM clliente WHERE cpf = ?");
   $sql = $pdo->prepare($sql);
   $sql->bindValue(1, $cpf);
@@ -66,7 +66,7 @@ if(isset($_POST['CPF']) && empty($_POST['CPF']) == false){
         <option value="-"></option>
       </select>
       </p>
-    <p id="CPF">CPF:</p> 
+    <p id="CPF">CPF:</p>
     <input id="cpf" type="text" name="CPF" placeholder="CPF do cliente" class="form-control" required>
 
     <p id="nome">NOME:</p>
@@ -79,7 +79,7 @@ if(isset($_POST['CPF']) && empty($_POST['CPF']) == false){
     <input id="cpf" type="text" name="telefone" placeholder="Telefone do cliente" class="form-control" required><br><br>
   </div>
 </pre>
-<div id="botoes">
+<div id="botoes" class="btn btn-group">
         <input type="button" value="inserir" class="btn btn-outline-success" style="cursor: pointer;">
         <input type="button" value="consultar" class="btn btn-outline-info" style="cursor: pointer;">
         <input type="button" value="alterar" class="btn btn-outline-primary" style="cursor: pointer;">

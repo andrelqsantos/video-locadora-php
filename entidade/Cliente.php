@@ -53,7 +53,7 @@ class Cliente {
     $sql->bindParam(4, $cliente->getTelefone);
     $sql->execute();
     return "INSERIDO";
-  } catch (Exception $e) {
+  } catch (PDOException $e) {
     echo "Erro na inserção".$e->getMessage();
     return "ERRO";
   }
